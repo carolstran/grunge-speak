@@ -1,0 +1,13 @@
+{
+  "name": "Grunge Speak",
+  "version": "0.1",
+  "description": "Browser extension that injects Seattle grunge speak into a website.",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "all_frames": true,
+      "js": ["makeItGrunge.js"]
+    }
+  ]
+}
